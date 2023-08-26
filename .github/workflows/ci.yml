@@ -67,5 +67,4 @@ jobs:
 
       - name: Test
         run: |
-          echo "${{ secrets.ENV_ADMIN }}" > .env
           pnpm run test
