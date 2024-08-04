@@ -1,7 +1,7 @@
 <script>
-    export const category = 'web';   
+	export const category = "web";
 </script>
 
-<span class="font-fira font-bold px-6 py bg-card-color border-green border rounded-full text-white">
-    {category}
+<span class="py rounded-full border border-green bg-card-color px-6 font-fira font-bold text-white">
+	{category}
 </span>
