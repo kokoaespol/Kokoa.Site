@@ -1,12 +1,13 @@
 <script lang="ts">
 	import Tag from "./Tag.svelte";
 
-	export const term = "2024-1s";
-	export const name = "Polipromedios";
-	export const category = "web";
-	export const description =
-		"Descripción de un proyecto super genial, muy, muy, muy pero muy genial.";
-	export const authors = ["Person 1", "Person 2"];
+	let {
+		term = "2024-1s",
+		name = "Polipromedios",
+		category = "web",
+		description = "Descripción de un proyecto super genial, muy, muy, muy pero muy genial.",
+		authors = ["Person 1", "Person 2"],
+	} = $props();
 </script>
 
 <div class="mx-4 max-w-80 rounded-xl bg-card-color p-4">
