@@ -20,7 +20,7 @@
 		<h2 class="font-fira text-xl font-medium text-white">{name}</h2>
 	</div>
 	<Tag {category} />
-	<p class="my-4 font-content text-[#dee5f2]">{description}</p>
+	<p class="my-4">{description}</p>
 	<div class="flex w-full flex-row justify-between">
 		<div class="flex flex-row items-center justify-center">
 			<!-- TODO: Implement author's avatars -->
