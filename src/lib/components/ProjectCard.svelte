@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Tag from "./Tag.svelte";
 
 	export const term = "2024-1s";

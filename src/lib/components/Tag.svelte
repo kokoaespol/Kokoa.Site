@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	export const category = "web";
 </script>
 
