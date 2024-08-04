@@ -1,18 +1,20 @@
 <script lang="ts">
 	import Tag from "./Tag.svelte";
 
-	let {
-		term = "2024-1s",
-		name = "Polipromedios",
-		category = "web",
-		description = "Descripción de un proyecto super genial, muy, muy, muy pero muy genial.",
-		authors = ["Person 1", "Person 2"],
-	} = $props();
+	type Props = {
+		term: string;
+		name: string;
+		category: string;
+		description: string;
+		// authors: string[];
+	};
+
+	let { term, name, category, description /* , authors */ }: Props = $props();
 </script>
 
-<div class="mx-4 max-w-80 rounded-xl bg-card-color p-4">
-	<span class="font-fira font-medium text-green">{term}</span>
-	<h2 class="font-fira text-xl font-medium text-white">{name}</h2>
+<div class="mx-4 max-w-80 rounded-xl bg-neutral-800 p-4">
+	<span class="font-fira font-medium text-lime-500">{term}</span>
+	<h2 class="font-fira text-xl font-medium">{name}</h2>
 	<Tag {category} />
-	<p class="font-content text-[#dee5f2]">{description}</p>
+	<p>{description}</p>
 </div>
