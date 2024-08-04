@@ -7,15 +7,8 @@ export default {
 	content: ["./src/**/*.{html,js,svelte,ts}"],
 	theme: {
 		extend: {
-			colors: {
-				"light-blue": "#e0ebff",
-				"card-color": "#272626",
-				green: "#6DD743",
-			},
 			fontFamily: {
-				content: ["Inter", "sans-serif"],
-				heading: ["Fira Code", "sans-serif"],
-				fira: ["Fira Code"],
+				fira: ["Fira Code", "mono-space"],
 			},
 		},
 	},

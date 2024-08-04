@@ -1,7 +1,13 @@
-<script>
-	export const category = "web";
+<script lang="ts">
+	type Props = {
+		category: string;
+	};
+
+	let { category }: Props = $props();
 </script>
 
-<span class="py rounded-full border border-green bg-card-color px-6 font-fira font-bold text-white">
+<span
+	class="py rounded-full border border-lime-500 bg-neutral-800 px-6 font-fira font-bold text-white"
+>
 	{category}
 </span>
