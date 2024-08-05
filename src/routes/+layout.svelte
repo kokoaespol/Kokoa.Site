@@ -2,7 +2,7 @@
 	import "../app.postcss";
 	import { Toaster } from "svelte-sonner";
 	import { page } from "$app/stores";
-	import Navbar from "./components/Navbar.svelte";	
+	import Navbar from "./components/Navbar.svelte";
 	let { children } = $props();
 </script>
 
@@ -11,7 +11,7 @@
 	<meta name="description" content={$page.data.description} />
 </svelte:head>
 
-<Navbar/>
+<Navbar />
 
 <Toaster richColors closeButton />
 {@render children()}
