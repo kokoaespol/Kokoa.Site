@@ -1,14 +1,13 @@
 <script lang="ts">
-	import ProjectCard from "$lib/components/ProjectCard.svelte";
-	import { projects } from "$lib/data/projects.json";
+	import CommonCard from "$lib/components/CommonCard.svelte";
 
 	let { data } = $props();
 </script>
 
 <p class="font-medium">{data.description}</p>
 <div class="mt-8 flex flex-col items-center sm:flex sm:flex-row sm:flex-wrap">
-	{#each projects as project}
-		<ProjectCard
+	{#each data.projects as project}
+		<CommonCard
 			term={project.term}
 			name={project.name}
 			category={project.category}

@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Tag from "$lib/components/Tag.svelte";
-	import MoreButton from "$lib/components/MoreButton.svelte";
 
 	type Props = {
 		term: string;
@@ -28,6 +27,8 @@
 				<img src="https://via.placeholder.com/150" alt={author} class="h-4 w-4 rounded-full" />
 			{/each} -->
 		</div>
-		<MoreButton />
+		<button class="rounded-full bg-lime-500 px-2 font-fira text-sm font-bold text-black">
+			Ver más
+		</button>
 	</div>
 </div>
