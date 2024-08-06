@@ -42,7 +42,6 @@
 		"date-fns": "^3.6.0",
 		"formsnap": "^1.0.1",
 		"lucide-svelte": "^0.424.0",
-		"simple-icons": "^13.4.0",
 		"svelte-sonner": "^0.3.27",
 		"tailwind-merge": "^2.4.0",
 		"valibot": "^0.37.0"
