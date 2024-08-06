@@ -10,6 +10,10 @@ export default {
 			fontFamily: {
 				fira: ["Fira Code", "mono-space"],
 			},
+			colors: {
+				primary: "#8CC63F",
+				base: "#E0EBFF",
+			},
 		},
 	},
 	plugins: [forms({ strategy: "class" }), typography],
