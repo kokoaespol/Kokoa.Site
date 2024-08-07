@@ -1,4 +1,4 @@
-<div class="mt-24 flex flex-col items-center justify-around gap-y-12 lg:flex lg:flex-row">
+<section class="mt-24 flex flex-col items-center justify-around gap-y-12 lg:flex lg:flex-row">
 	<div class="relative">
 		<img
 			src="https://images.unsplash.com/photo-1601933470096-0e34634ffcde?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -13,10 +13,10 @@
 		></div>
 	</div>
 	<div class="flex flex-col items-center gap-y-5">
-		<div>
+		<h1>
 			<span class="text-lime-500 lg:text-xl">Kokoa</span>
 			<span class="font-fira text-blue-100 lg:text-xl">- Vive el software libre</span>
-		</div>
+		</h1>
 		<div class="max-w-screen-md lg:max-w-screen-sm">
 			<p class="lg:text-md text-center font-fira text-sm text-blue-100">
 				Club estudiantil politécnico promotor del uso, modificación, distribución y aprendizaje de
@@ -30,4 +30,4 @@
 		</button>
 		<div class="bg-green-400"></div>
 	</div>
-</div>
+</section>
