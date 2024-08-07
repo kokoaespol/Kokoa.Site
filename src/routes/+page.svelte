@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Hero from "./hero.svelte";
+	import Hero from "./Hero.svelte";
 </script>
 
 <Hero />
