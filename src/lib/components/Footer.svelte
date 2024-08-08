@@ -3,31 +3,31 @@
 	import x_logo from "$lib/assets/icons/x.svg";
 	import instagram_logo from "$lib/assets/icons/instagram.svg";
 	import github_logo from "$lib/assets/icons/github.svg";
+	import mascota_imagen from "$lib/assets/logos/mascota.png";
 </script>
 
 <footer>
 	<div class="flex flex-col justify-between gap-6 p-6">
 		<div class="flex justify-between sm:flex-col md:flex-row md:gap-96">
-			<!-- TODO: use cute gecko -->
-			<img class="invisible md:visible" src="" alt="Mascota" />
+			<img class="hidden md:block size-32" src={mascota_imagen} alt="Mascota" />
 			<div class="flex flex-col gap-2 lg:justify-between">
 				<h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
 				<p>The latest news, articles, and resources, sent to your inbox weekly.</p>
-				<div class="flex flex-col justify-between gap-2 md:flex-row">
+				<div class="flex flex-col md:flex-row items-center gap-3">
 					<input
-						class="form-input rounded px-1 text-gray-900 md:h-full md:w-3/4 md:px-4"
+						class="form-input rounded text-gray-900 w-full md:w-3/4 h-10"
 						type="email"
 						placeholder="Enter your email"
 					/>
-					<button class="m-2 w-1/3 truncate rounded-lg bg-lime-600 p-3 md:w-1/4">
+					<button class="truncate rounded-lg bg-lime-600 px-2 w-full md:w-1/4 h-10">
 						Subscribe
 					</button>
 				</div>
 			</div>
 		</div>
 
-		<div class="flex justify-between border-t border-t-gray-400 p-4 lg:gap-96">
-			<h6 class="text-xs text-gray-300">© 2024 Kokoa</h6>
+		<div class="flex flex-col-reverse md:flex-row justify-between border-t border-t-gray-400 p-4 gap-5 lg:gap-96">
+			<h6 class="text-xs text-gray-300">© 2024 Kokoa. All rights reserved.</h6>
 			<div class="flex gap-6 text-gray-300">
 				<a href="https://www.facebook.com/kokoaecuador">
 					<img height="16" width="16" src={facebook_logo} alt="Facebook" />
