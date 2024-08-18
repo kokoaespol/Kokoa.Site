@@ -5,6 +5,7 @@ export const load = (async () => {
 	return {
 		title: "Chocoeventos",
 		// TODO: fetch from API
+		description: "Eventos del club Kokoa",
 		events,
 	};
 }) satisfies PageLoad;
