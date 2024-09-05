@@ -3,9 +3,9 @@
 	import gecko_code from "$lib/assets/logos/gecko-code.svg";
 
 	const current_path = $derived($page.url.pathname);
-	
+
 	let menuOpen = $state(false);
-	
+
 	const LINKS = [
 		{ text: "Inicio", href: "/" },
 		{ text: "Eventos", href: "/events" },
@@ -21,7 +21,6 @@
 	const closeMenu = () => {
 		menuOpen = false;
 	};
-
 </script>
 
 <nav class="nav-background flex items-center justify-between p-4">
@@ -32,7 +31,7 @@
 		<span class="line"></span>
 		<span class="line"></span>
 	</button>
-	<div class="links relative z-10 flex gap-x-8 text-lg links {menuOpen ? 'open' : ''}">
+	<div class="links links relative z-10 flex gap-x-8 text-lg {menuOpen ? 'open' : ''}">
 		{#each LINKS as { href, text } (href)}
 			<a {href} class="relative font-fira hover:underline" on:click={closeMenu}>
 				<span
@@ -62,7 +61,6 @@
 	.nav-background {
 		background-image: url("$lib/assets/forms/line.svg");
 		background-repeat: no-repeat;
-		background-position: left;
 		top: 20px;
 		background-size: 97% auto;
 	}
@@ -85,10 +83,10 @@
 		background-color: white;
 	}
 
-/* Estilos para pantallas pequeñas */
+	/* Estilos para pantallas pequeñas */
 	@media (max-width: 768px) {
 		.links {
-			position: fixed; /* Posición fija para que el menú cubra toda la pantalla */
+			position: fixed;
 			inset: 0; /* El menú ocupará toda la pantalla */
 			background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro para mayor visibilidad */
 			z-index: 50; /* Asegurar que esté por delante de otros elementos */
@@ -100,6 +98,9 @@
 			width: 100%;
 		}
 
+		nav img {
+			margin-bottom: 5rem;
+		}
 		.links.open {
 			display: flex; /* Mostrar el menú cuando esté abierto */
 		}
@@ -107,6 +108,7 @@
 		.hamburger {
 			display: flex;
 			margin-right: 20px;
+			margin-bottom: 5rem;
 		}
 	}
 
