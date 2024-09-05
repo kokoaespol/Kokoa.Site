@@ -1,10 +1,11 @@
 <script lang="ts">
 	import { page } from "$app/stores";
 	import gecko_code from "$lib/assets/logos/gecko-code.svg";
-	import lineNav from "$lib/assets/forms/line_nav.svg";
 
 	const current_path = $derived($page.url.pathname);
-
+	
+	let menuOpen = $state(false);
+	
 	const LINKS = [
 		{ text: "Inicio", href: "/" },
 		{ text: "Eventos", href: "/events" },
@@ -12,13 +13,28 @@
 		{ text: "Contacto", href: "/contact" },
 		{ text: "Miembros", href: "/members" },
 	];
+
+	const toggleMenu = () => {
+		menuOpen = !menuOpen;
+	};
+
+	const closeMenu = () => {
+		menuOpen = false;
+	};
+
 </script>
 
-<nav class="flex items-center justify-between p-4 nav-background">
-	<img src={gecko_code} alt="Logo de Kokoa" width="105.8" height="48.8" style="margin-left:5%"/>
-    <div class="flex gap-x-8 text-lg relative z-10">
+<nav class="nav-background flex items-center justify-between p-4">
+	<img src={gecko_code} alt="Logo de Kokoa" width="105.8" height="48.8" style="margin-left:5%" />
+	<!-- Botón del menú hamburguesa en pantallas pequeñas -->
+	<button class="hamburger" on:click={toggleMenu}>
+		<span class="line"></span>
+		<span class="line"></span>
+		<span class="line"></span>
+	</button>
+	<div class="links relative z-10 flex gap-x-8 text-lg links {menuOpen ? 'open' : ''}">
 		{#each LINKS as { href, text } (href)}
-			<a {href} class="relative font-fira hover:underline">
+			<a {href} class="relative font-fira hover:underline" on:click={closeMenu}>
 				<span
 					aria-hidden="true"
 					class="absolute -left-3 text-lime-500 {current_path !== href ? 'hidden' : ''}"
@@ -38,16 +54,66 @@
 </nav>
 
 <style>
-    nav {
-        position: relative;
+	nav {
+		position: relative;
 		height: 150px;
 		margin-bottom: 2%;
-    }
-    .nav-background {
-        background-image: url('$lib/assets/forms/line_nav.svg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
+	}
+	.nav-background {
+		background-image: url("$lib/assets/forms/line.svg");
+		background-repeat: no-repeat;
+		background-position: left;
 		top: 20px;
-    }
+		background-size: 97% auto;
+	}
+	.links {
+		margin-right: 70px;
+	}
+
+	.hamburger {
+		display: none;
+		flex-direction: column;
+		gap: 4px;
+		cursor: pointer;
+		background: none;
+		border: none;
+	}
+
+	.hamburger .line {
+		width: 25px;
+		height: 3px;
+		background-color: white;
+	}
+
+/* Estilos para pantallas pequeñas */
+	@media (max-width: 768px) {
+		.links {
+			position: fixed; /* Posición fija para que el menú cubra toda la pantalla */
+			inset: 0; /* El menú ocupará toda la pantalla */
+			background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro para mayor visibilidad */
+			z-index: 50; /* Asegurar que esté por delante de otros elementos */
+			display: none; /* Ocultar por defecto */
+			padding-top: 20px;
+			flex-direction: column;
+			align-items: center;
+			height: auto;
+			width: 100%;
+		}
+
+		.links.open {
+			display: flex; /* Mostrar el menú cuando esté abierto */
+		}
+
+		.hamburger {
+			display: flex;
+			margin-right: 20px;
+		}
+	}
+
+	@media (min-width: 769px) {
+		.links {
+			display: flex;
+			gap: 2.5rem;
+		}
+	}
 </style>
