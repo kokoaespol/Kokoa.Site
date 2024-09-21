@@ -15,7 +15,7 @@
 
 <div class="my-4 overflow-hidden rounded-3xl border border-lime-500">
 	<div
-		class="flex flex-col justify-center bg-neutral-800 p-8 lg:grid lg:grid-cols-[1fr,2fr,1fr] lg:gap-x-4"
+		class="flex flex-col justify-center bg-neutral-800 p-8 sm:grid sm:grid-cols-[1fr,2fr,1fr] sm:gap-x-4"
 	>
 		<div class="h-fit">
 			<img src={rust} alt="rust" class="mx-auto my-auto h-1/3 w-1/3 rounded-3xl" />
