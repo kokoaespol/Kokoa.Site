@@ -1,5 +1,25 @@
 <script lang="ts">
 	import Hero from "./Hero.svelte";
+	import Title from "$lib/components/Title.svelte";
+	import Event from "$lib/components/Event.svelte";
+
+	let { data } = $props();
 </script>
 
-<Hero />
+<main class="px-8">
+	<Hero />
+	<section class="my-8">
+		<Title title="Chocoeventos" />
+		<div class="flex flex-col items-center px-8">
+			{#each data.events as event}
+				<Event
+					name={event.name}
+					description={event.description}
+					date={event.date}
+					time={event.time}
+					place={event.place}
+				/>
+			{/each}
+		</div>
+	</section>
+</main>
