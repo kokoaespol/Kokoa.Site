@@ -6,7 +6,7 @@
 			"date": "15/08/2024",
 			"time": "11:00 - 12:00",
 			"place": "Lab Fiec 12A, ESPOL",
-            "category": "Taller"
+			"category": "Taller"
 		},
 		{
 			"name": "Rust 101",
@@ -14,7 +14,7 @@
 			"date": "15/08/2024",
 			"time": "11:00 - 12:00",
 			"place": "Lab Fiec 12A, ESPOL",
-            "category": "Taller"
+			"category": "Taller"
 		},
 		{
 			"name": "Rust 101",
@@ -22,7 +22,7 @@
 			"date": "15/08/2024",
 			"time": "11:00 - 12:00",
 			"place": "Lab Fiec 12A, ESPOL",
-            "category": "Taller"
+			"category": "Taller"
 		}
 	]
 }
