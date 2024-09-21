@@ -20,6 +20,9 @@
 					place={event.place}
 				/>
 			{/each}
+			<button class="py mt-4 rounded-full bg-lime-500 px-8 font-fira font-semibold text-black">
+				<a href="/events"> Ver más </a>
+			</button>
 		</div>
 	</section>
 </main>
