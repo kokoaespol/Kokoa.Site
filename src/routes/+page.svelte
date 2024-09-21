@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Hero from "./Hero.svelte";
 	import Title from "$lib/components/Title.svelte";
-	import Event from "$lib/components/Event.svelte";
+	import Event from "$lib/components/HomeEvent.svelte";
 
 	let { data } = $props();
 </script>

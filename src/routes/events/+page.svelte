@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Event from "$lib/components/Event.svelte";
+	import Event from "$lib/components/HomeEvent.svelte";
 
 	let { data } = $props();
 </script>
