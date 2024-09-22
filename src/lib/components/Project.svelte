@@ -15,7 +15,7 @@
 		authors: Author[];
 	};
 
-	let { id, term, name, categories, description, authors }: Props = $props();
+	let { id, term, name, categories, description /* authors  */ }: Props = $props();
 </script>
 
 <!-- TODO: Use semantic CSS https://www.magentaa11y.com/checklist-web/link/#complex-examples -->

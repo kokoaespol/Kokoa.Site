@@ -6,7 +6,7 @@ export const load: PageServerLoad = async ({ params }) => {
 	const project = data.projects.find((p) => p.id === id)!;
 	return {
 		title: `${project?.name} | KOKOA`,
-		description: project?.description!,
+		description: project!.description,
 		project,
 	};
 };
