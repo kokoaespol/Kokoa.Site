@@ -8,7 +8,7 @@
 	let { data } = $props();
 </script>
 
-<main class="px-8">
+<main class="px-8 md:mx-20 lg:mx-20">
 	<Hero />
 	<Chocomision />
 	<section class="my-8">

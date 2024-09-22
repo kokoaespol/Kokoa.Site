@@ -3,23 +3,22 @@
 </script>
 
 <section
-	class="mt-20"
+	class="mt-10 lg:mt-16 flex flex-col items-center sm:flex-row md:flex-row lg:flex-row lg:items-center "
 >
-	<Title title="Chocoeventos" />
-	<div class="flex w-full flex-col items-center justify-between sm:flex-row md:flex-row lg:mt-5 lg:flex-row">
+	<div class="flex w-full flex-col justify-between sm:flex-col md:flex-col lg:flex-col ">
+		<Title title="Chocomisión" />
 		<p
 			id="mision"
-			class="max-w-[19rem] text-sm sm:max-w-[20rem] md:max-w-[23rem] lg:ml-24 md:text-base lg:max-w-[25rem] lg:text-[1rem]"
+			class="max-w-[20rem] text-center md:text-left mt-4 lg:mt-5 sm:text-left lg:text-left text-sm sm:max-w-[20rem] lg:ml-3 md:max-w-[23rem] md:text-base lg:max-w-[25rem] lg:text-[1rem]"
 		>
 			Compartir, difundir e implementar, conocimiento y herramientas, para el desarrollo académico y
-			tecnológico de la sociedad Ecuatoriana
+			tecnológico de la sociedad Ecuatoriana.
 		</p>
-		<img
-			id="logo_kokoa"
-			src="/src/lib/assets/logos/logo-semib.png"
-			alt="Logo de KOKOA"
-			class="md:mr-15 mt-4 w-36 sm:mr-10 sm:mt-0 sm:w-44 md:w-48 lg:mr-[4.9rem] lg:w-64"
-		/>
 	</div>
-
+	<img
+		id="logo_kokoa"
+		src="/src/lib/assets/logos/logo-semib.png"
+		alt="Logo de KOKOA"
+		class="md:mr-15 mt-4 w-44 sm:mt-0 sm:w-44 md:w-48  md:mr-[7rem] lg:w-72"
+	/>
 </section>
