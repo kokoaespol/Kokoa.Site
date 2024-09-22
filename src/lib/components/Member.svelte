@@ -14,7 +14,7 @@
 </script>
 
 <div class="flex flex-col gap-2 justify-center items-center pb-14">
-    <img class="rounded-full size-24 inset-0" src={photo} alt="Foto" >
+    <img class="rounded-full size-20 md:size-24 inset-0" src={photo} alt="Foto" >
 
     <div class="flex flex-col justify-center items-center">
         <h2 class="text-lime-400 text-base" >{name}</h2>
