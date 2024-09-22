@@ -8,7 +8,7 @@
 	<title>Proyectos | KOKOA</title>
 </svelte:head>
 
-<Heading title="PROYECTOS" />
+<Heading>PROYECTOS</Heading>
 
 <div class="p-8">
 	<p class="font-fira font-medium">
