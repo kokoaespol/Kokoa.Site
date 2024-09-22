@@ -6,7 +6,8 @@
 	class="mt-10 flex flex-col items-center sm:flex-row md:flex-row lg:mt-16 lg:flex-row lg:items-center"
 >
 	<div
-		class="flex w-full flex-col items-center lg:items-start lg:justify-between sm:flex-col md:flex-col lg:flex-col">
+		class="flex w-full flex-col items-center sm:flex-col md:flex-col lg:flex-col lg:items-start lg:justify-between"
+	>
 		<Title title="Chocomisión" />
 		<p
 			id="mision"
