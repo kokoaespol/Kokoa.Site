@@ -4,6 +4,7 @@
 
 	let { data } = $props();
 </script>
+
 <Heading title="PROYECTOS" />
 <p class="font-medium">{data.description}</p>
 <div class="mt-8 flex flex-col items-center sm:flex sm:flex-row sm:flex-wrap">
