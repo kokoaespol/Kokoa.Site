@@ -26,14 +26,14 @@
 <nav class="nav-background flex items-center justify-between p-4">
 	<img src={gecko_code} alt="Logo de Kokoa" width="105.8" height="48.8" style="margin-left:5%" />
 	<!-- Botón del menú hamburguesa en pantallas pequeñas -->
-	<button class="hamburger" on:click={toggleMenu}>
+	<button class="hamburger" onclick={toggleMenu}>
 		<span class="line"></span>
 		<span class="line"></span>
 		<span class="line"></span>
 	</button>
 	<div class="links links relative z-10 flex gap-x-8 text-lg {menuOpen ? 'open' : ''}">
 		{#each LINKS as { href, text } (href)}
-			<a {href} class="relative font-fira hover:underline" on:click={closeMenu}>
+			<a {href} class="relative font-fira hover:underline" onclick={closeMenu}>
 				<span
 					aria-hidden="true"
 					class="absolute -left-3 text-lime-500 {current_path !== href ? 'hidden' : ''}"
