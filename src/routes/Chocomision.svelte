@@ -20,7 +20,7 @@
 	</div>
 	<img
 		id="logo_kokoa"
-		src="{logoKokoa}"
+		src={logoKokoa}
 		alt="Logo de KOKOA"
 		class="md:mr-15 mt-4 w-44 sm:mt-0 sm:w-44 md:mr-[7rem] md:w-48 lg:w-72"
 	/>
