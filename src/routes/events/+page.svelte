@@ -12,8 +12,8 @@
 			name={event.name}
 			description={event.description}
 			date={event.date}
-			time={event.time}
 			place={event.place}
+			category={event.category}
 		/>
 	{/each}
 </div>
