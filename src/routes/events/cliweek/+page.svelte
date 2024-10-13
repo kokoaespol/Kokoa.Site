@@ -13,22 +13,22 @@
 	<Tag category="11-11-2024 | 15-11-2024" />
 
 	<p id="description">
-		Welcome to the CLI Week! This is a week dedicated to the celebration of command line tools
-		in which we'll have talks and workshops and participants will compete to develop their own
-		CLI tool.
+		Welcome to the CLI Week! This is a week dedicated to the celebration of command line tools in
+		which we'll have talks and workshops and participants will compete to develop their own CLI
+		tool.
 	</p>
 
 	<h4 class="text-xl text-lime-600">How to participate?</h4>
 
 	<p id="how-to-participate">
-		You can participate either as a speaker or by building a CLI tool. Check out the links below for the corresponding
-		registration link.
+		You can participate either as a speaker or by building a CLI tool. Check out the links below for
+		the corresponding registration link.
 	</p>
 
 	<p id="speakers">
-		For speakers, you'll find a link to a registration form below where you can specify the topic you'd like to
-		talk about and you tentative dates. We'll then get in touch with you to coordinate your awesome
-		talk :).
+		For speakers, you'll find a link to a registration form below where you can specify the topic
+		you'd like to talk about and you tentative dates. We'll then get in touch with you to coordinate
+		your awesome talk :).
 	</p>
 
 	<p id="coders">
@@ -40,17 +40,17 @@
 		</a>.
 	</p>
 
-	<div id="registration" class="flex flex-col border rounded-md p-2 shadow-lg">
-		<h3 class="text-center text-2xl mb-4">Register</h3>
-		<div class="flex w-full gap-4 justify-center">
+	<div id="registration" class="flex flex-col rounded-md border p-2 shadow-lg">
+		<h3 class="mb-4 text-center text-2xl">Register</h3>
+		<div class="flex w-full justify-center gap-4">
 			<div id="registration-speakers" class="flex-1">
 				<a target="_blank" href="https://forms.gle/L3Ri4wdg3ACDEY1XA">
-					<button class="rounded-md p-2 w-full bg-lime-600 hover:bg-lime-500">Speakers</button>
+					<button class="w-full rounded-md bg-lime-600 p-2 hover:bg-lime-500">Speakers</button>
 				</a>
 			</div>
 			<div id="registration-participants" class="flex-1">
 				<a target="_blank" href="https://forms.gle/FqwFyMFcmc6NCNWv9">
-					<button class="rounded-md p-2 w-full bg-lime-600 hover:bg-lime-500">Coders</button>
+					<button class="w-full rounded-md bg-lime-600 p-2 hover:bg-lime-500">Coders</button>
 				</a>
 			</div>
 		</div>
@@ -59,20 +59,17 @@
 	<div id="sponsorship">
 		<h4 class="text-xl text-lime-600">Sponsorship</h4>
 		<p>
-			We are a non-profit organization and have limited resources, so if you'd like to help make this
-			event even cooler for our participants and act as a sponsor, please contact us at our email
+			We are a non-profit organization and have limited resources, so if you'd like to help make
+			this event even cooler for our participants and act as a sponsor, please contact us at our
+			email
 			<a href="mailto:kokoa.espol.ec@gmail.com">kokoa.espol.ec@gmail.com</a>.
 		</p>
 	</div>
 
 	<div id="speakers">
 		<h4 class="text-xl text-lime-600">Speakers</h4>
-		<p>
-			There are no speakers yet! Why don't you become the first one?
-		</p>
+		<p>There are no speakers yet! Why don't you become the first one?</p>
 	</div>
 
-	<div>
-		See you there!
-	</div>
+	<div>See you there!</div>
 </div>
